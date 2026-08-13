@@ -1,12 +1,8 @@
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const canvas = document.querySelector('#globe');
 const ctx = canvas.getContext('2d');
-let rotation = -.75, tilt = -0.08, zoom = 1, dragging = false, lastX = 0, lastY = 0;
-let cities = [
-  [-80,40.44,'played'],[-76.61,39.29,'played'],[-73.95,40.65,'played'],[-74.17,40.73,'played'],[-71.06,42.36,'played'],[-73.75,42.65,'played'],[-84.51,39.10,'played'],[-86.16,39.77,'played'],[-87.91,43.04,'played'],[-87.87,41.99,'played'],[-90.20,38.63,'played'],[-95.99,36.15,'played'],[-104.99,39.74,'played'],[-117.43,47.66,'rescheduled'],[-122.33,47.61,'played'],[-122.68,45.52,'played'],[-121.89,37.34,'played'],
-  [-121.49,38.58,'postponed'],[-115.14,36.17,'upcoming'],[-117.16,32.72,'upcoming'],[-112.07,33.45,'upcoming'],[-98.49,29.42,'upcoming'],[-96.80,32.78,'upcoming'],[-90.07,29.95,'upcoming'],[-81.66,30.33,'upcoming'],[-80.84,35.23,'upcoming'],[-86.80,33.52,'upcoming'],[-92.27,34.75,'upcoming'],[-94.58,39.10,'upcoming'],[-95.94,41.26,'upcoming'],[-106.31,42.85,'upcoming'],[-106.94,39.21,'upcoming'],
-  [126.98,37.57,'upcoming'],[139.70,35.68,'upcoming'],[103.82,1.35,'upcoming'],[153.03,-27.47,'upcoming'],[144.96,-37.81,'upcoming'],[151.21,-33.87,'upcoming']
-];
+let rotation=-.75,tilt=-.08,zoom=1,dragging=true;
+let cities=[];
 const earthTexture = new Image();
 earthTexture.src = 'assets/earth-satellite.jpg';
 function project(lon,lat,r){const λ=lon*Math.PI/180+rotation,φ=lat*Math.PI/180+tilt;const x=Math.cos(φ)*Math.sin(λ),y=Math.sin(φ),z=Math.cos(φ)*Math.cos(λ);return{x:canvas.width/2+x*r,y:canvas.height/2-y*r,z}}
