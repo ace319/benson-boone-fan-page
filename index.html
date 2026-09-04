@@ -10,14 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script>const sitePage=new URLSearchParams(location.search).get('page')||'home';document.documentElement.dataset.page=['home','about','gallery','music','map','tour','archive'].includes(sitePage)?sitePage:'home';</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the music</a>
   <div class="grain" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Heartline home"><span class="brand-mark">BB</span><span>Heartline</span></a>
+    <a class="brand" href="index.html" aria-label="Heartline home"><span class="brand-mark">BB</span><span>Heartline</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#about-benson">About</a><a href="#gallery">Gallery</a><a href="#records">Songs</a><a href="#tour">Tour</a>
+      <a data-page-link="home" href="index.html">Home</a><a data-page-link="about" href="?page=about">About</a><a data-page-link="gallery" href="?page=gallery">Gallery</a><a data-page-link="music" href="?page=music">Music</a><a data-page-link="map" href="?page=map">Map &amp; Stats</a><a data-page-link="tour" href="?page=tour">Tour</a><a data-page-link="archive" href="?page=archive">Archive</a>
     </nav>
     <button class="menu" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
@@ -28,7 +29,7 @@
         <p class="eyebrow"><span>Unofficial fan archive</span><span>Est. 2024</span></p>
         <h1>Benson<br><em>Boone</em></h1>
         <p class="hero-intro">The songs, the shows,<br>and all the flips in between.</p>
-        <a class="circle-cta" href="#records" aria-label="Explore the music"><span>Explore<br>the music</span><b>↘</b></a>
+        <a class="circle-cta" href="?page=music" aria-label="Explore the music"><span>Explore<br>the music</span><b>↘</b></a>
       </div>
       <figure class="hero-image">
         <img src="assets/benson-live.png" alt="Benson Boone performing on stage under dramatic lights" />
@@ -190,14 +191,14 @@
 
     <section class="geography-stats" aria-labelledby="geography-title">
       <header><div><p class="section-label">04B / Location stats</p><h2 id="geography-title">CITIES &amp;<br><em>COUNTRIES.</em></h2></div><p id="geography-summary">Loading geographic performance statistics…</p></header>
-      <details class="wanted-played-locations"><summary><span>WANTED MAN TOUR</span><strong>20 shows played so far</strong><b>View cities +</b></summary><div id="wanted-played-location-list"></div></details>
+      <details class="wanted-played-locations"><summary><span>WANTED MAN TOUR</span><strong>34 shows played so far</strong><b>View cities +</b></summary><div id="wanted-played-location-list"></div></details>
       <div class="geography-columns geography-countries-only"><section><h3>Countries by most played <small>Click one to see every city</small></h3><ol id="country-stats"></ol></section></div>
       <p class="geography-note">Based on reported Benson Boone performances from 2021 through Los Angeles night two on August 11, 2026. Boroughs and neighboring municipalities follow the city names used by setlist.fm.</p>
     </section>
 
     <section class="tour-board" id="tour">
       <header><div><p class="section-label">07 / Live in 2026</p><h2>WANTED MAN<br><em>WORLD TOUR</em></h2></div><div><p>48 tracked performances across the United States, Asia, and Australia, including the JAS Aspen festival date. The tour follows the sold-out American Heart World Tour.</p><a href="https://www.bensonboone.com/" target="_blank" rel="noreferrer" class="tour-button">Tickets &amp; updates ↗</a></div></header>
-      <div class="tonight-alert"><span>NEXT · AUG 31</span><strong>KANSAS CITY<br>IS NEXT.</strong><p>After North Little Rock, the Wanted Man Tour reaches T-Mobile Center in Kansas City on Monday, August 31.</p><a href="https://www.bensonboone.com/" target="_blank" rel="noreferrer">Check official tour updates ↗</a></div>
+      <div class="tonight-alert"><span>TONIGHT · SEP 04</span><strong>JAS ASPEN<br>IS TONIGHT.</strong><p>Benson headlines Friday night at the JAS Aspen Snowmass Labor Day Experience in Snowmass Town Park.</p><a href="https://www.bensonboone.com/" target="_blank" rel="noreferrer">Check official tour updates ↗</a></div>
       <figure class="wanted-tour-poster">
         <img src="assets/benson-boone-wanted-man-tour-official-poster.jpg" alt="Official Wanted Man Tour 2026 poster featuring Benson Boone in a denim jacket against a blue background" width="1200" height="630" loading="lazy">
         <figcaption><span>Official Wanted Man Tour 2026 artwork</span><a href="https://bensonboonelive.com/" target="_blank" rel="noreferrer">Source: AEG Presents ↗</a></figcaption>
@@ -254,7 +255,7 @@
         <button class="archive-more archive-more-dark" id="wanted-shows-more" type="button" aria-expanded="false">Show every completed show ↓</button>
         <div class="setlist-note"><strong>HOW THE TRACKER WORKS</strong><p>The main list shows the reported post-Pittsburgh running order. Pittsburgh is preserved separately because opening night included “What Do You Want.” Future swaps, covers, skipped songs, and surprises will be marked as variations. Setlists and unreleased-song titles are fan-reported and may be corrected later.</p></div>
       </section>
-      <p class="tour-note">Status checked August 30, 2026 against BensonBoone.com, Warner Records, official venue and regional ticketing, Live Nation, AXS, and Frontier Touring. “Played” means the date passed with evidence the show took place. Rosemont includes both July 24 and July 25. The September 4 JAS Aspen appearance is included in the tracked routing. Sacramento’s Golden 1 Center show was moved from August 8 to September 9; original tickets will be honored. The Spokane arena concert was moved from August 2 to September 6 because of ongoing wildfire conditions; original tickets are automatically honored. Check the official site before making travel plans.</p>
+      <p class="tour-note">Status checked September 4, 2026 against BensonBoone.com, Warner Records, official venue and regional ticketing, Live Nation, AXS, and Frontier Touring. “Played” means the date passed with evidence the show took place. Rosemont includes both July 24 and July 25. Tonight’s JAS Aspen appearance is a festival performance in Snowmass, separate from the Wanted Man arena dates. Sacramento’s Golden 1 Center show was moved from August 8 to September 9; original tickets will be honored. The Spokane arena concert was moved from August 2 to September 6 because of ongoing wildfire conditions; original tickets are automatically honored. Check the official site before making travel plans.</p>
     </section>
 
     <section class="past-tour concert-archive" id="concert-archive" aria-labelledby="concert-archive-title">
@@ -281,7 +282,7 @@
         <button class="archive-more" id="archive-2025-more" type="button" aria-expanded="false">Show all 2025 shows ↓</button>
         <p class="archive-source">Show information and fan-reported setlists sourced from <a href="https://www.setlist.fm/stats/concert-map/benson-boone-4bf0df42.html?year=2025" target="_blank" rel="noreferrer">setlist.fm’s 2025 Benson Boone archive ↗</a>. Entries may be edited by its community.</p>
       </section>
-      <section class="year-archive year-archive-2026" aria-labelledby="year-2026-title"><header><div><p class="section-label">The story continues</p><h3 id="year-2026-title">2026 SHOW<br><em>ARCHIVE.</em></h3></div><p>All 39 performances tracked for 2026 through North Little Rock: the American Heart finale, special appearances, and the Wanted Man shows reported so far.</p></header><figure class="archive-tour-poster archive-tour-poster-wide"><img src="assets/benson-boone-wanted-man-tour-official-poster.jpg" alt="Official Wanted Man Tour 2026 poster featuring Benson Boone" loading="lazy"><figcaption><strong>WANTED MAN TOUR</strong><span>Official 2026 tour artwork</span></figcaption></figure><div class="archive-filters archive-year-filters" role="group" aria-label="Filter 2026 performances"><button class="active" data-year="2026" data-year-filter="all">All 39</button><button data-year="2026" data-year-filter="Wanted Man Tour">Wanted Man 31</button><button data-year="2026" data-year-filter="American Heart">American Heart 1</button><button data-year="2026" data-year-filter="Other performance">Other shows 7</button></div><p class="archive-result-count" id="archive-2026-count">Loading 2026 shows…</p><div class="year-show-list compact-list" id="year-2026-list"></div><button class="archive-more" id="archive-2026-more" type="button" aria-expanded="false">Show all 2026 shows ↓</button><p class="archive-source"><a href="https://www.setlist.fm/stats/concert-map/benson-boone-4bf0df42.html?year=2026" target="_blank" rel="noreferrer">View the live 2026 index on setlist.fm ↗</a></p></section>
+      <section class="year-archive year-archive-2026" aria-labelledby="year-2026-title"><header><div><p class="section-label">The story continues</p><h3 id="year-2026-title">2026 SHOW<br><em>ARCHIVE.</em></h3></div><p>All 42 completed performances tracked for 2026 through Casper: the American Heart finale, special appearances, and the Wanted Man shows reported so far.</p></header><figure class="archive-tour-poster archive-tour-poster-wide"><img src="assets/benson-boone-wanted-man-tour-official-poster.jpg" alt="Official Wanted Man Tour 2026 poster featuring Benson Boone" loading="lazy"><figcaption><strong>WANTED MAN TOUR</strong><span>Official 2026 tour artwork</span></figcaption></figure><div class="archive-filters archive-year-filters" role="group" aria-label="Filter 2026 performances"><button class="active" data-year="2026" data-year-filter="all">All 42</button><button data-year="2026" data-year-filter="Wanted Man Tour">Wanted Man 34</button><button data-year="2026" data-year-filter="American Heart">American Heart 1</button><button data-year="2026" data-year-filter="Other performance">Other shows 7</button></div><p class="archive-result-count" id="archive-2026-count">Loading 2026 shows…</p><div class="year-show-list compact-list" id="year-2026-list"></div><button class="archive-more" id="archive-2026-more" type="button" aria-expanded="false">Show all 2026 shows ↓</button><p class="archive-source"><a href="https://www.setlist.fm/stats/concert-map/benson-boone-4bf0df42.html?year=2026" target="_blank" rel="noreferrer">View the live 2026 index on setlist.fm ↗</a></p></section>
     </section>
 
   </main>
@@ -301,8 +302,9 @@
 
   <footer>
     <div><span class="brand-mark">BB</span><h2>KEEP YOUR<br>HEART OPEN.</h2></div>
-    <div class="footer-meta"><p>An independent fan-made celebration. Not affiliated with Benson Boone or Warner Records. Research: official Benson Boone site, Warner Records and Apple Music. Photography: <a href="https://commons.wikimedia.org/wiki/Category:Benson_Boone" target="_blank" rel="noreferrer">Wikimedia Commons contributors</a> and Shayden J. Schoonover / Afterglow ATX. Earth imagery: NASA/GSFC Scientific Visualization Studio.</p><nav><a href="https://www.bensonboone.com/" target="_blank" rel="noreferrer">Official site ↗</a><a href="https://store.bensonboone.com/" target="_blank" rel="noreferrer">Merch ↗</a><a href="#top">Back to top ↑</a></nav></div>
+    <div class="footer-meta"><p>An independent fan-made celebration. Not affiliated with Benson Boone or Warner Records. Research: official Benson Boone site, Warner Records and Apple Music. Photography: <a href="https://commons.wikimedia.org/wiki/Category:Benson_Boone" target="_blank" rel="noreferrer">Wikimedia Commons contributors</a> and Shayden J. Schoonover / Afterglow ATX. Earth imagery: NASA/GSFC Scientific Visualization Studio.</p><nav><a href="https://www.bensonboone.com/" target="_blank" rel="noreferrer">Official site ↗</a><a href="https://store.bensonboone.com/" target="_blank" rel="noreferrer">Merch ↗</a><a href="#main">Back to top ↑</a></nav></div>
   </footer>
   <script src="script.js"></script>
+  <script>document.querySelector(`[data-page-link="${document.documentElement.dataset.page}"]`)?.setAttribute('aria-current','page');</script>
 </body>
 </html>
