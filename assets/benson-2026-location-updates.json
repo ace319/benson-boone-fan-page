@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-06",
+  "retrieved": "2026-09-07",
   "shows": [
     {"date":"Aug 14, 2026","dateSort":"2026-08-14","city":"Las Vegas, NV","mapName":"Las Vegas, NV, USA","lat":36.1699,"lon":-115.1398,"venue":"T-Mobile Arena","event":"","tour":"Wanted Man Tour","source":"https://www.setlist.fm/setlist/benson-boone/2026/t-mobile-arena-las-vegas-nv-376b50f.html"},
     {"date":"Aug 15, 2026","dateSort":"2026-08-15","city":"San Diego, CA","mapName":"San Diego, CA, USA","lat":32.7157,"lon":-117.1611,"venue":"Pechanga Arena","event":"","tour":"Wanted Man Tour","source":"https://www.setlist.fm/venue/pechanga-arena-san-diego-ca-usa-2bd25cba.html"},
@@ -14,6 +14,7 @@
     {"date":"Aug 31, 2026","dateSort":"2026-08-31","city":"Kansas City, MO","mapName":"Kansas City, MO, USA","lat":39.0997,"lon":-94.5786,"venue":"T-Mobile Center","event":"","tour":"Wanted Man Tour","source":"https://www.setlist.fm/setlist/benson-boone/2026/t-mobile-center-kansas-city-mo-1376b5dd.html"},
     {"date":"Sep 1, 2026","dateSort":"2026-09-01","city":"Omaha, NE","mapName":"Omaha, NE, USA","lat":41.2565,"lon":-95.9345,"venue":"CHI Health Center Omaha","event":"","tour":"Wanted Man Tour","source":"https://www.setlist.fm/venue/chi-health-center-omaha-omaha-ne-usa-43d0d767.html"},
     {"date":"Sep 3, 2026","dateSort":"2026-09-03","city":"Casper, WY","mapName":"Casper, WY, USA","lat":42.8501,"lon":-106.3252,"venue":"Ford Wyoming Center","event":"","tour":"Wanted Man Tour","source":"https://www.setlist.fm/show/2026-09-03/ford-wyoming-center-casper-wy-6b89dae2.html?setlist=376b5cf"},
-    {"date":"Sep 4, 2026","dateSort":"2026-09-04","city":"Snowmass Village, CO","mapName":"Snowmass Village, CO, USA","lat":39.2130,"lon":-106.9378,"venue":"Town Park","event":"JAS Aspen Snowmass Labor Day Festival 2026","tour":"Other performance","source":"https://www.setlist.fm/setlist/benson-boone/2026/town-park-snowmass-village-co-434b1fb7.html"}
+    {"date":"Sep 4, 2026","dateSort":"2026-09-04","city":"Snowmass Village, CO","mapName":"Snowmass Village, CO, USA","lat":39.2130,"lon":-106.9378,"venue":"Town Park","event":"JAS Aspen Snowmass Labor Day Festival 2026","tour":"Other performance","source":"https://www.setlist.fm/setlist/benson-boone/2026/town-park-snowmass-village-co-434b1fb7.html"},
+    {"date":"Sep 6, 2026","dateSort":"2026-09-06","city":"Spokane, WA","mapName":"Spokane, WA, USA","lat":47.6588,"lon":-117.4260,"venue":"Numerica Veterans Arena","event":"Rescheduled from August 2","tour":"Wanted Man Tour","source":"https://www.ticketswest.com/events/detail/benson-boone-the-wanted-man-tour"}
   ]
 }
