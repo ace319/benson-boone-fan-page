@@ -52,3 +52,4 @@ html[data-page="home"] main>.about-benson,html[data-page="home"] main>.gallery,h
 html[data-page="about"] main>section:not(.about-benson),html[data-page="gallery"] main>section:not(.gallery):not(.flip-reel),html[data-page="music"] main>section:not(.records):not(.song-stats),html[data-page="map"] main>section:not(.live):not(.geography-stats),html[data-page="tour"] main>section:not(.tour-board),html[data-page="archive"] main>section:not(.concert-archive){display:none}
 html:not([data-page="home"]) main>section:first-of-type{border-top:0}
 @media(max-width:1050px){.site-header nav{gap:11px}.site-header nav a{font-size:9px}}
+.tour-list p.played strong>b{display:none}
