@@ -48,6 +48,7 @@
 
 /* Short page views: one shared archive, seven focused destinations. */
 html:not([data-page="home"]) .site-header{position:relative;background:var(--ink);color:white}
+html:not([data-page="home"]) .kca-vote{display:none}
 .site-header nav{gap:18px}.site-header nav a[aria-current="page"]{color:var(--yellow);text-decoration:underline;text-underline-offset:6px}
 html[data-page="home"] main>.about-benson,html[data-page="home"] main>.gallery,html[data-page="home"] main>.flip-reel,html[data-page="home"] main>.records,html[data-page="home"] main>.song-stats,html[data-page="home"] main>.live,html[data-page="home"] main>.geography-stats,html[data-page="home"] main>.tour-board,html[data-page="home"] main>.concert-archive{display:none}
 html[data-page="about"] main>section:not(.about-benson),html[data-page="gallery"] main>section:not(.gallery):not(.flip-reel),html[data-page="music"] main>section:not(.records):not(.song-stats),html[data-page="map"] main>section:not(.live):not(.geography-stats),html[data-page="tour"] main>section:not(.tour-board),html[data-page="archive"] main>section:not(.concert-archive){display:none}
