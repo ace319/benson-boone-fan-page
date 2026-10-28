@@ -6,20 +6,22 @@
   ]);
 
   const data=JSON.parse(JSON.stringify(base));
-  const unitedStates=data.countries.find(country=>country.name==='United States');
   recent.shows.forEach(show=>{
-    let city=unitedStates.cities.find(item=>item.name===show.city);
-    if(!city){city={name:show.city,plays:0,shows:[]};unitedStates.cities.push(city)}
+    const countryName=show.country||'United States';
+    let country=data.countries.find(item=>item.name===countryName);
+    if(!country){country={name:countryName,plays:0,cityCount:0,cities:[]};data.countries.push(country)}
+    let city=country.cities.find(item=>item.name===show.city);
+    if(!city){city={name:show.city,plays:0,shows:[]};country.cities.push(city)}
     if(!city.shows.some(item=>item.dateSort===show.dateSort&&item.venue===show.venue)){
       city.shows.push({date:show.date,dateSort:show.dateSort,venue:show.venue,event:show.event,tour:show.tour,source:show.source});
       city.shows.sort((a,b)=>a.dateSort.localeCompare(b.dateSort));
       city.plays+=1;
-      unitedStates.plays+=1;
+      country.plays+=1;
       data.performanceCount+=1;
     }
   });
-  unitedStates.cities.sort((a,b)=>a.name.localeCompare(b.name));
-  unitedStates.cityCount=unitedStates.cities.length;
+  data.countries.forEach(country=>{country.cities.sort((a,b)=>a.name.localeCompare(b.name));country.cityCount=country.cities.length});
+  data.countryCount=data.countries.length;
   data.cityCount=data.countries.reduce((total,country)=>total+country.cities.length,0);
 
   const showRow=(show,cityName)=>{
